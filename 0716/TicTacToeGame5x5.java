@@ -1,6 +1,6 @@
 import java.util.*;
 
-class TicTacToeGame {
+class TicTacToeGame5x5 {
     private static final char EMPTY = '.';
     private static final char PLAYER_X = 'X';
     private static final char PLAYER_O = 'O';
@@ -159,17 +159,11 @@ class TicTacToeGame {
     public static void main(String[] args) {
         char[][] board = initializeBoard();
         
-        System.out.println("=== 井字遊戲示範 ===");
+        System.out.println("=== 5x5 井字遊戲 ===");
         printBoard(board);
-        
-        // 模擬一場遊戲
-        // int[][] moves = {
-        //     {0, 0}, {0, 1}, {1, 1}, {0, 2}, {2, 2}  // X, O, X, O, X
-        // };
         
         char currentPlayer = PLAYER_X;
         
-        // for (int i = 0; i < moves.length; i++) {
         Scanner sc = new Scanner(System.in);
 
         while(true) {
